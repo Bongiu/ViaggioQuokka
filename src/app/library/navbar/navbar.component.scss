@@ -1,0 +1,34 @@
+.aeroplane{
+    background-image: url('../../assets/aeroplane-icon.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+}
+#sectionOne{
+display: flex;
+align-items: center;
+}
+#sectionTwo{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#sectionTwo>ul{
+    display: flex;
+    text-decoration: none;
+}
+#sectionTwo>ul>li{
+    padding-left: 3rem;
+    list-style-type:none;
+
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  10px;
+}
+ul{
+    text-decoration: none;
+}
