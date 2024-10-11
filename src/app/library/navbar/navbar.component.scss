@@ -21,14 +21,23 @@ align-items: center;
 #sectionTwo>ul>li{
     padding-left: 3rem;
     list-style-type:none;
-
+    font-size: 20px;
+    color: black;
+}
+ul{
+    text-decoration: none;
+}
+#destination{
+    border-radius: 40px;
+    border: none;
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 220px;
 }
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding:  10px;
-}
-ul{
-    text-decoration: none;
+    background-color: #56a5d6;
 }

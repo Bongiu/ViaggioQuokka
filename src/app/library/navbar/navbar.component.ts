@@ -1,12 +1,15 @@
 import { Component } from '@angular/core';
+import { BottoneComponent } from "../bottone/bottone.component";
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [],
+  imports: [BottoneComponent],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
+
+testoInput = 'Search';
 
 }
