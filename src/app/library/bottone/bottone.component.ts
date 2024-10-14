@@ -1,4 +1,4 @@
-import { Component, input} from '@angular/core';
+import { Component, input, output} from '@angular/core';
 
 @Component({
   selector: 'app-bottone',
@@ -9,7 +9,6 @@ import { Component, input} from '@angular/core';
 })
 export class BottoneComponent {
 testoBottone = input.required<string>();
-
 
 
 }

@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { BottoneComponent } from "../bottone/bottone.component";
+
 
 @Component({
   selector: 'app-navbar',
@@ -10,6 +11,8 @@ import { BottoneComponent } from "../bottone/bottone.component";
 })
 export class NavbarComponent {
 
-testoInput = 'Search';
+ testoInput = signal<string>('Search');
+ testoInputbot = signal<string>('Clear');
+
 
 }
