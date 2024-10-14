@@ -9,6 +9,6 @@ import { BottoneComponent } from "../bottone/bottone.component";
   styleUrl: './card.component.scss'
 })
 export class CardComponent {
-  testoBottCard = 'Book now';
+book = '';
 
 }

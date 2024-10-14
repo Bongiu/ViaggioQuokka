@@ -8,7 +8,18 @@ import { Component, input, output} from '@angular/core';
   styleUrl: './bottone.component.scss'
 })
 export class BottoneComponent {
-testoBottone = input.required<string>();
+
+  label = input<string>();
+
+  // outputDettaglio = output<string>();
+
+
+  // setDatiDettaglio(datiDettaglioCard:string){
+ 
+  //   this.outputDettaglio.emit(datiDettaglioCard);
+  // }
+  
+
 
 
 }

@@ -11,8 +11,7 @@ import { BottoneComponent } from "../bottone/bottone.component";
 })
 export class NavbarComponent {
 
- testoInput = signal<string>('Search');
- testoInputbot = signal<string>('Clear');
+
 
 
 }

@@ -2,53 +2,14 @@
 display: flex;
 margin-top: 20px
 }
-.line{
-    height: 200px;
-    border-left: 2px solid black;
-    position: relative;
-    // left: 1rem;
-    }
-    .box-lineIcon{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: 30px;
-    }
-  .twitter{
-    background-image: url('../../assets/icons/twitter-brands-solid.svg');
-    width: 30px;
-    height: 30px;
-    background-repeat: no-repeat;
-    margin: 10px 10px;
-  }
-  .facebook{
-    background-image: url('../../assets/icons/facebook-brands-solid.svg');
-    width: 30px;
-    height: 30px;
-    background-repeat: no-repeat;
-    margin: 10px 10px;
-  }
-  .insta{
-    background-image: url('../../assets/icons/instagram-brands-solid.svg');
-    width: 30px;
-    height: 30px;
-    background-repeat: no-repeat;
-    margin: 10px 10px;
-  }
-  .youtube{
-    background-image: url('../../assets/icons/youtube-brands-solid.svg');
-    width: 30px;
-    height: 30px;
-    background-repeat: no-repeat;
-    margin: 10px 10px;
-  }
+
+h1{
+  text-transform: uppercase;
+  font-size: 60px;
+}
 
 
-  .icons{
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-  }
+
 
 .conteinar{
     max-width: 300px !important;
@@ -57,7 +18,3 @@ margin-top: 20px
     
 }
 
-h1{
-    text-transform: uppercase;
-    font-size: 60px;
-}
