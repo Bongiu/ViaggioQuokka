@@ -11,13 +11,13 @@ export class BottoneComponent {
 
   label = input<string>();
 
-  // outputDettaglio = output<string>();
+  outputDettaglio = output<string>();
 
 
-  // setDatiDettaglio(datiDettaglioCard:string){
- 
-  //   this.outputDettaglio.emit(datiDettaglioCard);
-  // }
+  setDatiDettaglio(datiDettaglioCard:string){
+    // alert('quokka invia output');
+    this.outputDettaglio.emit(datiDettaglioCard);
+  }
   
 
 

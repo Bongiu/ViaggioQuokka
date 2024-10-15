@@ -10,5 +10,15 @@ import { BottoneComponent } from "../bottone/bottone.component";
 })
 export class CardComponent {
 book = '';
+nuovoOut ='nuova quokka'
+
+riceviDatiDettaglio(f:string){
+//  debugger;
+  // alert('perchè questo non quokka');
+  
+  console.log('quokka output ricevuto',f);
+  }
+
+ 
 
 }

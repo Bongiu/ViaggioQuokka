@@ -3,7 +3,25 @@
     <app-navbar></app-navbar>
     <div class="body">
         <app-social></app-social>
-        <app-card></app-card>
+
+        <!-- CARD -->
+        <app-card>
+            <div class="contenitore">
+
+                <div class="conteinar">
+
+                    <h1>Explore <br> dream <br> destination</h1>
+                    <p> It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes,
+                        while pursuing the desired destination that captivates the heart and ignites a sense of wonder
+                    </p>
+
+                    <!-- <app-bottone [label]="book == 'mario' ? 'book' : 'Search'"></app-bottone> -->
+                    <app-bottone label="Book now"></app-bottone>
+                    <!-- <app-bottone (outputDettaglio)="riceviDatiDettaglio($event)" label="output"></app-bottone> -->
+                </div>
+            </div>
+        </app-card>
+        <!-- /CARD -->
     </div>
 
 </div>
