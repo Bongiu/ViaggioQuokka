@@ -1,6 +1,7 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 import { BottoneComponent } from "../bottone/bottone.component";
 import { RouterLink, RouterLinkActive } from '@angular/router';
+
 
 
 @Component({

@@ -7,22 +7,21 @@
 .homepage{
     z-index: 2;
 }
-.body{
-    display: flex;
-    margin-top: 20px;
-}
+
 
 // CARD
 .contenitore{
     display: flex;
-    margin-top: 20px
+    // margin-top: 20px
     }
     
     h1{
       text-transform: uppercase;
       font-size: 60px;
     }
-    
+    .gap{
+        margin: 20px 0 px;
+    }
     
     
     

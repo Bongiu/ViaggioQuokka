@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CardComponent } from '../card/card.component';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { ActivatedRoute, RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-about-us',
@@ -11,4 +11,5 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class AboutUsComponent {
 
+ 
 }
