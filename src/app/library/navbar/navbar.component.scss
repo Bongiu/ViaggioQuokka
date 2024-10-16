@@ -1,0 +1,66 @@
+.aeroplane{
+    background-image: url('../../assets/aeroplane-icon.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+}
+#sectionOne{
+display: flex;
+align-items: center;
+}
+#sectionTwo{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.bottoni{
+    position: relative;
+    z-index: 2;
+}
+#sectionTwo>ul{
+    display: flex;
+    text-decoration: none;
+}
+#sectionTwo>ul>li{
+    padding-left: 3rem;
+    list-style-type:none;
+    font-size: 20px;
+    color: black;
+}
+#sectionTwo>ul>li:hover{
+    color: rgba(154, 84, 224, 0.9);;
+}
+
+#sectioThree{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 20px;
+}
+ul{
+    text-decoration: none;
+}
+#destination{
+    border-radius: 40px;
+    border: none;
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 220px;
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  10px;
+    background-color: #56a5d6;
+    // position: relative;
+    // z-index: 10;
+}
+.btn-container{
+    position: absolute;
+    display: flex;
+    justify-content: end;
+  
+}
