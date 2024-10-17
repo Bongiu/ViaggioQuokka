@@ -1,11 +1,12 @@
-import { Component, inject, input, output } from '@angular/core';
+import { Component, inject, } from '@angular/core';
 import { CardComponent } from '../card/card.component';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { SelezionaImmagineService } from '../../core/services/seleziona-immagine.service';
+import { BadgeComponent } from "../badge/badge.component";
 @Component({
   selector: 'app-about-us',
   standalone: true,
-  imports: [CardComponent, RouterLink, RouterLinkActive],
+  imports: [CardComponent, RouterLink, RouterLinkActive, BadgeComponent, BadgeComponent],
   templateUrl: './about-us.component.html',
   styleUrl: './about-us.component.scss',
 })
