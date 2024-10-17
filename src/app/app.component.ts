@@ -16,23 +16,18 @@ import { SocialComponent } from './library/social/social.component';
 })
 export class AppComponent {
   title = 'viaggioQuokka';
+
+  constructor(public route : ActivatedRoute){}
+
   riceviDatiDettaglio(f:string){
     console.log(f)
     }
+  // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-    constructor(private route: ActivatedRoute) {}
-
-    ngOnInit() {
-      console.log(this.route); ActivatedRoute
-      this.route.url.subscribe((event) => {
-        console.log(event[0]); // It's an array remember [0]
-        console.log(event[0]?.path); // e.g. /products
-        console.log(event[0]?.parameters); // e.g. { id: 'x8klP0' }
-      });
-      console.log(this.route.snapshot); // ActivatedRouteSnapshot
-      console.log(this.route.snapshot.url); // UrlSegment[]
-      console.log(this.route.snapshot.url[0]); // UrlSegment
-      console.log(this.route.snapshot.url[0]?.path);
-    }
+//  ngOnInit(){
+//   console.log('APP',this.route.snapshot); // ActivatedRouteSnapshot
+//   console.log('APP',this.route.url);
+//  }
+  // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
     
 }

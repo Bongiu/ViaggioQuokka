@@ -1,15 +1,27 @@
-import { Component } from '@angular/core';
+import { Component, inject, input, output } from '@angular/core';
 import { CardComponent } from '../card/card.component';
-import { ActivatedRoute, RouterLink, RouterLinkActive } from '@angular/router';
-
+import { RouterLink, RouterLinkActive } from '@angular/router';
+import { SelezionaImmagineService } from '../../core/services/seleziona-immagine.service';
 @Component({
   selector: 'app-about-us',
   standalone: true,
   imports: [CardComponent, RouterLink, RouterLinkActive],
   templateUrl: './about-us.component.html',
-  styleUrl: './about-us.component.scss'
+  styleUrl: './about-us.component.scss',
 })
 export class AboutUsComponent {
+  pageUrl = window.location.href;
 
- 
+  inviaUrl = inject(SelezionaImmagineService);
+  currentUrl :string | null= '';
+
+  ngOnInit() {
+    console.log(this.pageUrl);
+    this.inviaUrl.pagUrl$.subscribe(url=>{
+      this.currentUrl = url;
+      console.log(`Current url ${url}`);
+    })
+  }
+
+  
 }

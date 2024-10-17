@@ -1,29 +1,29 @@
-<div class="navbar">
-    <div id="sectionOne">
-        <!-- <img src='../../assets/aeroplane-icon.png' alt="aeroplano"> -->
-        <div class="aeroplane"></div>
-        <h2>TravelBloom</h2>
-    </div>
-    <div id="sectionTwo">
-        <ul class="bottoni">
-            <li routerLink="" routerLinkActive="active" >
-                Home
-            </li>
-            <li routerLink="/about-us" routerLinkActive="active">
-                About
-            </li>
-            <li>
-                Contact us
-            </li>
-        </ul>
-    </div>
-    <div id="sectioThree">
-        <input id="destination" type="text" placeholder="Enter a destination or keyword">
-       <div class="btn-container">
-           <app-bottone label="Search"></app-bottone>
-           <app-bottone label="Clear"></app-bottone>
+    <div class="navbar">
+        <div id="sectionOne">
+            <!-- <img src='../../assets/aeroplane-icon.png' alt="aeroplano"> -->
+            <div class="aeroplane"></div>
+            <h2>TravelBloom</h2>
         </div>
-        
-
+        <div id="sectionTwo">
+            <ul class="bottoni">
+                <li routerLink="" routerLinkActive="active" >
+                    Home
+                </li>
+                <li routerLink="/about-us" routerLinkActive="active" >
+                    About
+                </li>
+                <li>
+                    Contact us
+                </li>
+            </ul>
+        </div>
+        @if(urlRicevuta === urlEnum.HOME){
+            <div id="sectioThree">
+                <input id="destination" type="text" placeholder="Enter a destination or keyword">
+                <div class="btn-container">
+                    <app-bottone label="Search"></app-bottone>
+                    <app-bottone label="Clear"></app-bottone>
+                </div>
+            </div>
+        }
     </div>
-</div>

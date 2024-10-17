@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { BottoneComponent } from "../bottone/bottone.component";
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { SelezionaImmagineService } from '../../core/services/seleziona-immagine.service';
+import { UrlEnum } from '../../core/interfaces/interfaces';
 
 
 
@@ -12,8 +14,20 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
+ urlPath = '';
+ prendiUrl = inject(SelezionaImmagineService);
+ urlRicevuta : string | null= '';
+
+ urlEnum = UrlEnum; //importr enum
+
+constructor(){}
 
 
-
+ ngOnInit(){
+  this.prendiUrl.pagUrl$.subscribe(url=>{
+    this.urlRicevuta = url;
+    console.log('url da navbar', url)
+  })
+ }
 
 }
