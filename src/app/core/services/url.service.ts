@@ -6,11 +6,9 @@ import { BehaviorSubject, filter, Subject } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class SelezionaImmagineService {
+export class UrlServices {
 
   pagUrl$ = new BehaviorSubject<string | null>(null);
-
-
 
   constructor(private route: Router) {
     this.route.events

@@ -3,3 +3,9 @@ export enum UrlEnum {
     ABOUT = 'about-us',
     CONTACTUS = 'contact-us'
 }
+
+export enum KeywordEnum {
+    COUNTRIES = 'countries',
+    TEMPLES = 'temples',
+    BEACHES = 'beaches'
+}

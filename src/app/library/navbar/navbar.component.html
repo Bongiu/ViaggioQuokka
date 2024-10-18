@@ -19,11 +19,13 @@
         </div>
         @if(urlRicevuta === urlEnum.HOME){
             <div id="sectioThree">
-                <input id="destination" type="text" placeholder="Enter a destination or keyword">
+                <input id="destination" type="text" placeholder="Enter a destination or keyword" name="destination" [(ngModel)]="destination">
                 <div class="btn-container">
-                    <app-bottone label="Search"></app-bottone>
+                    <app-bottone label="Search" (click)="setValue()"></app-bottone>
                     <app-bottone label="Clear"></app-bottone>
                 </div>
+              
             </div>
         }
     </div>
+    <div>  {{destination}}</div>

@@ -1,7 +1,7 @@
 import { Component, inject, } from '@angular/core';
 import { CardComponent } from '../card/card.component';
 import { RouterLink, RouterLinkActive } from '@angular/router';
-import { SelezionaImmagineService } from '../../core/services/seleziona-immagine.service';
+import { UrlServices } from '../../core/services/url.service';
 import { BadgeComponent } from "../badge/badge.component";
 import { BottoneComponent } from '../bottone/bottone.component';
 @Component({
@@ -14,7 +14,7 @@ import { BottoneComponent } from '../bottone/bottone.component';
 export class AboutUsComponent {
   // pageUrl = window.location.href;
 
-  inviaUrl = inject(SelezionaImmagineService);
+  inviaUrl = inject(UrlServices);
   currentUrl :string | null= '';
 
   ngOnInit() {
