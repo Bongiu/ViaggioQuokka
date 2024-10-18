@@ -3,8 +3,9 @@
 }
 .badge{
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
+    padding: 2rem;
 }
 h1{
     text-transform: uppercase;
@@ -13,7 +14,7 @@ h1{
   }
 h2{
    
-    font-size: 60px;
+    font-size: 50px;
     margin-right: 5.5rem;
    
   }
@@ -23,3 +24,4 @@ h2{
    font-size: 20px;
    margin-bottom: 3rem;
   }
+  

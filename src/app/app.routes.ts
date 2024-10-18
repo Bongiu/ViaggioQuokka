@@ -6,6 +6,7 @@ import { HomeComponent } from './library/home/home.component';
 export const routes: Routes = [
   {path:'', component:HomeComponent},
   {path: 'about-us', loadChildren:()=>import('./library/about-us/about.route').then(m=>m.ROUTES)},
+  {path: 'contact-us', loadChildren:()=>import('./library/contact-us/contact.route').then(m=>m.ROUTES)},
   // {path: 'aboutUs', component:AboutUsComponent},
     {
         path: '**',

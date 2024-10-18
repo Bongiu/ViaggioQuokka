@@ -1,0 +1,31 @@
+<app-card>
+    <div class="container">
+        <div>
+            <h1>Contact us</h1>
+            <p>Get in touch</p>
+        </div>
+        <div>
+            <form [formGroup]="formViaggio">
+                <div>
+               
+                   
+                        <label for="username" >Name</label><br>
+                        <input id="username" type="text" placeholder="Insert your name" formControlName="username">
+                    
+                </div>
+                <div>
+                    
+                    <label for="mail" >Email</label><br>
+                    <input id="mail" type="email" placeholder="Insert your e-mail" formControlName="mail">
+                </div>
+                <div>
+                    <label for="message">Message</label><br>
+                    <textarea id="message"></textarea>
+                </div>
+                <div>
+                    <app-bottone label="Submit" (click)="submitForm()"></app-bottone>
+                </div>
+            </form>
+        </div>
+    </div>
+</app-card>

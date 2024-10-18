@@ -1,0 +1,24 @@
+h1{
+    text-transform: uppercase;
+    font-size: 60px;
+    margin-bottom: 2.5rem;
+  }
+  .container{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+  }
+  form{
+    padding: 2rem;
+    background-color: #6b6b6b3e;
+    width: 600px;
+    border-radius: 10px;
+    margin-left: 6rem;
+  }
+input, textarea{
+  width: 100%;
+  height: 3rem;
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 1rem;
+}
