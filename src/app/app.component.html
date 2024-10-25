@@ -1,22 +1,41 @@
-
 <div class="backgoundApp">
-
   <div>
     <app-navbar (searchValue)="getKeywordViaggio($event)"></app-navbar>
-  </div> 
+  </div>
   <div class="body">
     <app-social></app-social>
- 
     <router-outlet></router-outlet>
     <!-- <app-bottone (outputDettaglio)="riceviDatiDettaglio($event)"></app-bottone> -->
   </div>
-
-
 </div>
 @if(displayCard){
+@if(oggCountries){
+ 
+    <app-card>
+      <h1>{{oggCountries.name || oggTemple.name}}</h1>
+      
+      <!-- <img src={{oggCity.imageUrl}} alt="immagine imporatta"> -->
+     
+        
+      <div class="img">
+        
+      </div>
+      
+      @if(oggCountries.cities) {
+        <p>{{oggCity}}</p>
+      }
+     
+    </app-card>
+}
 
-  <div>
-    Card
-    
-  </div>
+  
+
+  <!-- TODO:  3 if else if else -> card specifica con il dato che torna(interfaccia creata per ricevere la response specifica)
+   -card coutries
+   -card temples
+   -card beaches -->
+<!--    
+ 
+    } -->
+
 }
